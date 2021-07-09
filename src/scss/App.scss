@@ -1,0 +1,35 @@
+.Page {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  header {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    ul {
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+      li {
+        display: list-item;
+      }
+    }
+  }
+  .Content {
+    height: 100vh;
+  }
+}
+
+.conteiner {
+  @media (min-width: 1000px) {
+    width: 940px;
+  }
+}
+
+.Content {
+  margin-top: 80px;
+}

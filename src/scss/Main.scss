@@ -1,0 +1,28 @@
+.Main {
+  padding: 0;
+
+  .Description {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .MyPhoto-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    .MyPhoto {
+      height: 387px;
+      background-image: url("../ME.jpg");
+      background-color: aqua;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
+.container {
+  @media (min-width: 1000px) {
+    width: 940px;
+  }
+}
