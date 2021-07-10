@@ -1,5 +1,7 @@
 .Main {
   padding: 0;
+  padding-top: 100px;
+  margin-bottom: 100px;
 
   .Description {
     margin: 20px auto;
@@ -9,7 +11,7 @@
   .MyPhoto-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+
     .MyPhoto {
       height: 387px;
       background-image: url("../ME.jpg");
@@ -18,11 +20,5 @@
       background-position: center;
       background-size: cover;
     }
-  }
-}
-
-.container {
-  @media (min-width: 1000px) {
-    width: 940px;
   }
 }

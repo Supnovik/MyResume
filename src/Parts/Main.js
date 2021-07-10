@@ -1,4 +1,5 @@
 import React from "react";
+import "../scss/App.scss";
 import "../scss/Main.scss";
 
 function Main() {
@@ -6,13 +7,13 @@ function Main() {
     <div className="Main">
       <div className="Description container">
         <h1>
-          Nikita <br />
-          Malyutin
+          Никита <br />
+          Малютин
         </h1>
         <p>
-          Frontend developer
+          Frontend разработчик
           <br />
-          20 years old
+          20 Лет, Новосибирск
         </p>
         <div>RU | ENG</div>
       </div>
