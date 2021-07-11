@@ -4,7 +4,6 @@ import AboutMe from "./Parts/AboutMe";
 import Contacts from "./Parts/Contacts";
 import Skills from "./Parts/Skills";
 import Portfolio from "./Parts/Portfolio";
-import "./scss/App.scss";
 
 function App() {
   let [navstyle, setNavstyle] = useState("");
@@ -23,18 +22,34 @@ function App() {
 
   return (
     <div className="Page">
-      <section id="home"></section>
       <div className={"nav-bar container " + navstyle}>
-        <ul className="container">
-          <a href="#home">Главная</a>
-          <a href="#aboutme">Обо мне</a>
-          <a href="#skills">Навыки</a>
-          <a href="#portfolio">Портфолио</a>
-          <a href="#contacts">Контакты</a>
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul className="menu__box container">
+          <a className="menu__item" href="#home">
+            Главная
+          </a>
+          <a className="menu__item" href="#aboutme">
+            Обо мне
+          </a>
+          <a className="menu__item" href="#skills">
+            Навыки
+          </a>
+          <a className="menu__item" href="#portfolio">
+            Портфолио
+          </a>
+          <a className="menu__item" href="#contacts">
+            Контакты
+          </a>
         </ul>
       </div>
+
       <div>
+        <section id="home"></section>
         <Main />
+
         <section id="aboutme">
           <AboutMe />
         </section>
