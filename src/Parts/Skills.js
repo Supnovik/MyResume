@@ -9,7 +9,8 @@ function Skills() {
       <p className="container">
         Опыт работы с Javascript, HTML, CSS, С#
         <br />
-        Typescript, React, Docker, ООП, PostgreSQL, ASP.NET CORE
+        Typescript, React, Docker, PostgreSQL, ASP.NET CORE
+        <br /> Английский - B1
       </p>
     </div>
   );

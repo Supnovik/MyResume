@@ -15,7 +15,6 @@ function Main() {
           <br />
           20 Лет, Новосибирск
         </p>
-        <div>RU | ENG</div>
       </div>
       <div className="MyPhoto-wrapper">
         <div className="MyPhoto container" />

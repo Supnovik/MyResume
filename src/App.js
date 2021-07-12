@@ -7,11 +7,18 @@ import Portfolio from "./Parts/Portfolio";
 
 function App() {
   let [navstyle, setNavstyle] = useState("");
+  let [menubtn, setMenubtn] = useState("");
+
+  function setMenu() {
+    if (menubtn === "") {
+      setMenubtn("menu-active");
+    } else setMenubtn("");
+  }
 
   const handleScroll = () => {
     console.log(1);
     if (window.scrollY !== 0) {
-      setNavstyle((navstyle = "active"));
+      setNavstyle((navstyle = "active "));
     } else setNavstyle("");
   };
 
@@ -22,25 +29,24 @@ function App() {
 
   return (
     <div className="Page">
-      <div className={"nav-bar container " + navstyle}>
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
+      <div className={"nav-bar container " + navstyle + menubtn}>
+        <div class={"menu__btn"} onClick={() => setMenu()}>
           <span></span>
-        </label>
+        </div>
         <ul className="menu__box container">
-          <a className="menu__item" href="#home">
+          <a className="menu__item" href="#home" onClick={() => setMenu()}>
             Главная
           </a>
-          <a className="menu__item" href="#aboutme">
+          <a className="menu__item" href="#aboutme" onClick={() => setMenu()}>
             Обо мне
           </a>
-          <a className="menu__item" href="#skills">
+          <a className="menu__item" href="#skills" onClick={() => setMenu()}>
             Навыки
           </a>
-          <a className="menu__item" href="#portfolio">
+          <a className="menu__item" href="#portfolio" onClick={() => setMenu()}>
             Портфолио
           </a>
-          <a className="menu__item" href="#contacts">
+          <a className="menu__item" href="#contacts" onClick={() => setMenu()}>
             Контакты
           </a>
         </ul>
