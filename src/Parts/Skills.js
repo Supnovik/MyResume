@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/Skills.scss";
+
 import "../scss/App.scss";
 
 function Skills() {

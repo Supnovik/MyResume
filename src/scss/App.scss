@@ -1,10 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap");
 $w1: 979px;
 
+* {
+  font-family: "Exo 2", sans-serif;
+}
 .Page {
   padding: 0;
   margin: 0;
-  user-select: none;
+
   .nav-bar {
+    user-select: none;
+
     width: 100%;
     background-color: rgb(255, 255, 255);
 
@@ -38,38 +44,36 @@ $w1: 979px;
       .menu__item {
         display: list-item;
         text-decoration: none;
-        color: black;
+        color: rgb(82, 82, 82);
 
+        font-size: 20px;
+        font-weight: 600;
         @media (max-width: $w1) {
           display: table;
 
           padding: 20px 24px;
           width: 80%;
           color: #333;
-
-          font-family: "Roboto", sans-serif;
           font-size: 40px;
-          font-weight: 600;
 
           text-decoration: none;
 
           transition-duration: 0.25s;
+
+          &:focus {
+            background-color: #cfd8dc;
+          }
         }
-      }
 
-      .menu__item:hover {
-        background-color: #cfd8dc;
-      }
-
-      .menu__item:focus {
-        background-color: #cfd8dc;
+        &:hover {
+          color: black;
+        }
       }
     }
   }
 }
 
 .container {
-  margin: 0 auto;
   margin: 0 auto;
   @media (min-width: $w1) {
     width: 940px;
@@ -119,26 +123,69 @@ $w1: 979px;
 
   cursor: pointer;
   z-index: 99;
+
+  span,
+  span::before,
+  span::after {
+    @media (min-width: 1000px) {
+      visibility: hidden;
+    }
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: 0.25s;
+  }
+
+  span::before {
+    content: "";
+    top: -8px;
+  }
+
+  span::after {
+    content: "";
+    top: 8px;
+  }
 }
 
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  @media (min-width: 1000px) {
-    visibility: hidden;
+.Info {
+  .AboutMe,
+  .Portfolio {
+    width: 100%;
+    background-color: beige;
+    padding-bottom: 100px;
   }
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #616161;
-  transition-duration: 0.25s;
-}
-.menu__btn > span::before {
-  content: "";
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: "";
-  top: 8px;
+  .Skills {
+    padding-bottom: 100px;
+  }
+  .Contacts {
+    background-color: beige;
+  }
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 100px;
+  }
+  p {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  @media (max-width: $w1) {
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      padding-top: 100px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      text-align: center;
+      padding-top: 50px;
+    }
+  }
 }

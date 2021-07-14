@@ -10,10 +10,14 @@
 
   .Description {
     margin: 20px auto;
+    h1 {
+      font-size: 40px;
+    }
 
     @media (min-width: $w1) {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
   }
   .MyPhoto-wrapper {

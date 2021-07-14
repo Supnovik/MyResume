@@ -43,19 +43,17 @@ function App() {
           <a className="menu__item" href="#skills" onClick={() => setMenu()}>
             Навыки
           </a>
-          <a className="menu__item" href="#portfolio" onClick={() => setMenu()}>
-            Портфолио
-          </a>
+          {/*<a className="menu__item" href="#portfolio" onClick={() => setMenu()}>
+            Портфолио </a>*/}
           <a className="menu__item" href="#contacts" onClick={() => setMenu()}>
             Контакты
           </a>
         </ul>
       </div>
 
-      <div>
-        <section id="home"></section>
-        <Main />
-
+      <section id="home"></section>
+      <Main />
+      <div className="Info">
         <section id="aboutme">
           <AboutMe />
         </section>
@@ -64,9 +62,9 @@ function App() {
           <Skills />
         </section>
 
-        <section id="portfolio">
+        {/*<section id="portfolio">
           <Portfolio />
-        </section>
+        </section>*/}
 
         <section id="contacts">
           <Contacts />
