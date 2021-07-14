@@ -28,7 +28,7 @@ function Contacts() {
             target="_blank"
             rel="noreferrer"
           >
-            https://github.com/Supnovik
+            Supnovik
           </a>
         </p>
       </div>
