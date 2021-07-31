@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MyResume/static/css/main.89eacb92.chunk.css",
+    "main.js": "/MyResume/static/js/main.9f84d85d.chunk.js",
+    "main.js.map": "/MyResume/static/js/main.9f84d85d.chunk.js.map",
+    "runtime-main.js": "/MyResume/static/js/runtime-main.0d792024.js",
+    "runtime-main.js.map": "/MyResume/static/js/runtime-main.0d792024.js.map",
+    "static/js/2.7dc136cc.chunk.js": "/MyResume/static/js/2.7dc136cc.chunk.js",
+    "static/js/2.7dc136cc.chunk.js.map": "/MyResume/static/js/2.7dc136cc.chunk.js.map",
+    "static/js/3.848bfc3c.chunk.js": "/MyResume/static/js/3.848bfc3c.chunk.js",
+    "static/js/3.848bfc3c.chunk.js.map": "/MyResume/static/js/3.848bfc3c.chunk.js.map",
+    "index.html": "/MyResume/index.html",
+    "static/css/main.89eacb92.chunk.css.map": "/MyResume/static/css/main.89eacb92.chunk.css.map",
+    "static/js/2.7dc136cc.chunk.js.LICENSE.txt": "/MyResume/static/js/2.7dc136cc.chunk.js.LICENSE.txt",
+    "static/media/Main.scss": "/MyResume/static/media/ME.2fcae45c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0d792024.js",
+    "static/js/2.7dc136cc.chunk.js",
+    "static/css/main.89eacb92.chunk.css",
+    "static/js/main.9f84d85d.chunk.js"
+  ]
+}
