@@ -1,1 +1,2 @@
-Open http://20.102.105.169:8080
+
+https://supnovik.github.io/MyResume/
